@@ -21,7 +21,7 @@ public class UnionOfSortedArray {
                 Union.add (arr1[i]);
                 i++;
             }
-            else if(arr1[i]>arr2[j]){
+            else if(arr1[i]>arr2[j]){ 
                 Union.add(arr2[j]);
                 j++;
             }
