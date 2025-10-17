@@ -10,18 +10,19 @@ public class RotateArrayOptimal {
             end--;
         }
     }
+    
 
     public static void rotate(int[] arr, int k) {
         int n = arr.length;
-        k = k % n; // handle if k > n
+        k = k % n; 
 
-        // Step 1: Reverse entire array
+       
         reverse(arr, 0, n - 1);
 
-        // Step 2: Reverse first k elements
+       
         reverse(arr, 0, k - 1);
 
-        // Step 3: Reverse remaining elements
+       
         reverse(arr, k, n - 1);
     }
 
